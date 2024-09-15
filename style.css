@@ -1,0 +1,237 @@
+/* Reset default margin and padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body and container styles */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f5f5f5;
+  color: rgb(23, 23, 23);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: justify;
+  line-height: 1.8em;
+}
+
+/* Header styles - fixed at the top */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #000000;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* Header logo image centered and 90% height of header */
+.header-logo img {
+  height: 50px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* Content section with paragraph and images */
+.content {
+  width: 100%;
+  padding: 100px 20px 20px; /* Padding adjusted to ensure header visibility */
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1; /* Allows the content to grow and fill space */
+}
+
+/* Paragraph styling */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Grid container for images */
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+}
+
+/* Portrait 3:4 ratio for images */
+.grid-container img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+/* Mobile layout: 2 columns */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .vissza {
+    width: 100%;
+  }
+}
+
+/* Desktop layout: responsive columns based on width, minimum 10% of screen */
+@media (min-width: 769px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+  }
+  .vissza {
+    width: 220px;
+  }
+}
+
+/* Footer styling */
+footer {
+  width: 100%;
+  background-color: #000000;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.8em;
+  height: 50px;
+
+  /* Flexbox centering */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Floating icon styles */
+/* Floating Button styling */
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(247, 109, 14);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden; /* Ensure the image fits within the button */
+  /*  -webkit-box-shadow: 0px 0px 10px 4px rgba(245, 245, 245, 0.9);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(245, 245, 245, 0.9);
+  box-shadow: 0px 0px 10px 4px rgba(245, 245, 245, 0.9); */
+}
+
+/* Style for the image inside the floating button */
+.kontakt-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30.5px;
+  width: 40px;
+}
+
+.icon-menu {
+  position: fixed;
+  bottom: 90px;
+  right: 25px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icon-menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 109, 14);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* Icon styling */
+h2 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+h1 {
+  margin-bottom: 5px;
+  text-align: left;
+  word-spacing: 0.2em;
+  line-height: 1.1em;
+}
+ul li {
+  margin-left: 15px;
+}
+p {
+  margin-top: 10px;
+}
+.toggle img {
+  height: 30px;
+  cursor: pointer;
+}
+.toggle {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #171717;
+    color: #f5f5f5;
+  }
+  .contactItem a {
+    color: #f5f5f5;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #f5f5f5;
+    color: #171717;
+  }
+  .contactItem a {
+    color: #171717;
+  }
+}
+.contactItem svg {
+  fill: rgb(247, 109, 14);
+  vertical-align: bottom;
+}
+.contactItem p {
+  display: inline-block;
+  margin: 0px;
+  vertical-align: bottom;
+}
+.contactItem {
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+.contactItem a {
+  text-decoration: none;
+}
+footer a {
+  color: #f5f5f5;
+}
+.vissza {
+  height: 40px;
+  border: 2px solid #171717;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #171717;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}

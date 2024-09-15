@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TransPolc</title>
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+    <!-- Google Font: Roboto Bold -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-logo">
+        <a href="index.html"> <img src="logo.png" alt="TransPolc logó" /></a>
+      </div>
+
+      <div class="toggle">
+        <img
+          src="dark.png"
+          alt="Sötét / világos téma váltása"
+          onclick="toggleMode()"
+          id="mod"
+        />
+      </div>
+    </header>
+
+    <!-- Content section with paragraph and images -->
+    <div class="content">
+      <!-- Lorem Ipsum Paragraph -->
+      <h1>Üdvözlünk a TransPolcnál!</h1>
+      <p>
+        Célunk kényelmessé tenni mindent, ami bútorokkal kapcsolatos. Csapatunk
+        az egész lakberendezési folyamaton végigkísér, levéve sok terhet a
+        válladról. Amíg mi alkotunk, töltsd idődet az igazán fontos dolgokkal.
+      </p>
+      <p>
+        Nem hagyunk ott, ha ötöt üt az óra:) Mi időt és energiát nem spórolva
+        dolgozunk a tökéletes végeredményig.
+      </p>
+      <p>
+        Köszönjük, hogy megismerkedtél velünk. Bízunk benne, hogy hamarosan
+        neked is segíthetünk álomotthonod kialakításában. Addig lesd meg
+        referenciáinkat, vagy érdeklődj kollégáinktól.
+      </p>
+      <h2>Szolgáltatásaink</h2>
+      <ul>
+        <li>Bútorok házhoz szállítása</li>
+        <li>Bútorok összeszerelése</li>
+        <li>Régi bútorok elszállítása</li>
+        <li>Csomagolóanyagok elszállítása</li>
+        <li>Ledsor telepítés, 12V</li>
+        <li>Gyepszőnyeg telepítés</li>
+      </ul>
+
+      <!-- Image Grid -->
+
+      <h2>Elérhetőségeink</h2>
+      <span class="contactItem">
+        <a href="tel:+36307115923" title="Hívás">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="25px"
+            viewBox="0 -960 960 960"
+            width="25px"
+          >
+            <path
+              d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+            />
+          </svg>
+          <p>+36 30 711 5923</p>
+        </a>
+      </span>
+      <span class="contactItem">
+        <a href="mailto:info@transpolc.hu" title="Email">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30px"
+            viewBox="0 -960 960 960"
+            width="27px"
+          >
+            <path
+              d="M146.67-160q-27 0-46.84-19.83Q80-199.67 80-226.67v-506.66q0-27 19.83-46.84Q119.67-800 146.67-800h666.66q27 0 46.84 19.83Q880-760.33 880-733.33v506.66q0 27-19.83 46.84Q840.33-160 813.33-160H146.67ZM480-454.67 146.67-670v443.33h666.66V-670L480-454.67Zm0-66.66 330.67-212H150l330 212ZM146.67-670v-63.33V-226.67-670Z"
+            />
+          </svg>
+          <p>info@transpolc.hu</p>
+        </a>
+      </span>
+      <h2>Korábbi munkáink</h2>
+      <div class="grid-container">
+        <img src="ref1.jpg" alt="Referencia 1" title="Fürdőszobabútor" />
+        <img src="ref2.jpg" alt="Referencia 2" title="Irodabútor" />
+        <img src="ref3.jpg" alt="Referencia 3" title="Díszbútor" />
+        <img src="ref4.jpg" alt="Referencia 4" title="Hálószobabútor" />
+        <img src="ref5.jpg" alt="Referencia 5" title="Irodabútor" />
+        <img src="ref6.jpg" alt="Referencia 6" title="Irodabútor" />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 TRANSPOLC | <a href="impresszum.html">Impresszum</a></p>
+    </footer>
+
+    <!-- Floating Button -->
+    <div class="floating-btn" onclick="toggleMenu()">
+      <img
+        src="contact.png"
+        alt="Kontakt"
+        id="floatingIcon"
+        class="kontakt-icon"
+      />
+    </div>
+
+    <!-- Hidden Icon Menu -->
+    <div class="icon-menu" id="iconMenu">
+      <a href="tel:+36307115923" title="Hívás">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#FFFFFF"
+        >
+          <path
+            d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+          />
+        </svg>
+      </a>
+
+      <a href="sms:+36307115923" title="SMS">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="30px"
+          viewBox="0 -960 960 960"
+          width="30px"
+          fill="#FFFFFF"
+        >
+          <path
+            d="M310.67-522q17 0 28.5-11.5t11.5-28.5q0-17-11.5-28.5t-28.5-11.5q-17 0-28.5 11.5t-11.5 28.5q0 17 11.5 28.5t28.5 11.5ZM482-522q17 0 28.5-11.5T522-562q0-17-11.5-28.5T482-602q-17 0-28.5 11.5T442-562q0 17 11.5 28.5T482-522Zm166.67 0q17 0 28.5-11.5t11.5-28.5q0-17-11.5-28.5t-28.5-11.5q-17 0-28.5 11.5t-11.5 28.5q0 17 11.5 28.5t28.5 11.5ZM80-80v-733.33q0-27 19.83-46.84Q119.67-880 146.67-880h666.66q27 0 46.84 19.83Q880-840.33 880-813.33v506.66q0 27-19.83 46.84Q840.33-240 813.33-240H240L80-80Zm131.33-226.67h602v-506.66H146.67v575l64.66-68.34Zm-64.66 0v-506.66 506.66Z"
+          />
+        </svg>
+      </a>
+
+      <a href="mailto:info@transpolc.hu" title="Email">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="30px"
+          viewBox="0 -960 960 960"
+          width="30px"
+          fill="#FFFFFF"
+        >
+          <path
+            d="M146.67-160q-27 0-46.84-19.83Q80-199.67 80-226.67v-506.66q0-27 19.83-46.84Q119.67-800 146.67-800h666.66q27 0 46.84 19.83Q880-760.33 880-733.33v506.66q0 27-19.83 46.84Q840.33-160 813.33-160H146.67ZM480-454.67 146.67-670v443.33h666.66V-670L480-454.67Zm0-66.66 330.67-212H150l330 212ZM146.67-670v-63.33V-226.67-670Z"
+          />
+        </svg>
+      </a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
